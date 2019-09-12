@@ -1,0 +1,29 @@
+﻿@model MvcApplication2.Models.cargo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>cargo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.car_cod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.car_cod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.car_des)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.car_des)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
